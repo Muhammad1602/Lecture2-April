@@ -103,3 +103,36 @@ console.log(y); // ReferenceError
 let y = 3;
 ```
 
+## _`recursion`_
+![The San Juan Mountains are beautiful!](./image/recursion.png)
+
+### Recursion is when a function calls itself until someone stops it. If no one stops it then it'll recurse (call itself) forever. Recursive functions let you perform a unit of work multiple times.
+
+```
+function recurse() {
+    if(condition) {
+        recurse();
+    }
+    else {
+        // stop calling recurse()
+    }
+}
+recurse();
+```
+
+
+## _`closure`_
+![The San Juan Mountains are beautiful!](./image/closure.jpeg)
+
+* ### A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function
+
+```
+function outerFunc() {
+  let outerVar = 'I am outside!';
+  function innerFunc() {
+    console.log(outerVar); // => logs "I am outside!"
+  }
+  innerFunc();
+}
+outerFunc();
+```
